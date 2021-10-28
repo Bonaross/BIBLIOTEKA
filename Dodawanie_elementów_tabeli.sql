@@ -9,25 +9,26 @@ ALTER TABLE Autorzy
 		FOR IdAutora
 ;
 
+ALTER TABLE Autorzy
+ADD DrugieImie nvarchar(20);
+
 INSERT INTO Autorzy values
 (
 	DEFAULT, 'Adam','Mickiewicz'
 );
 INSERT INTO Autorzy values
 (
-	DEFAULT, 'Juliusz','S³owacki'
+	DEFAULT, 'Juliusz','SÂ³owacki'
 );
 INSERT INTO Autorzy values
 (
-	DEFAULT, 'Boles³aw','Prus',null
+	DEFAULT, 'BolesÂ³aw','Prus',null
 );
 INSERT INTO Autorzy values
 (
 	DEFAULT, 'Umberto','Eco',null
 );
 
-ALTER TABLE Autorzy
-ADD DrugieImie nvarchar(20);
 
 INSERT INTO Autorzy values
 (
@@ -45,7 +46,7 @@ ALTER TABLE Kategoria
 
 INSERT INTO [Kategoria] values
 (
-	DEFAULT, 'Krymina³'
+	DEFAULT, 'KryminaÂ³'
 );
 INSERT INTO [Kategoria] values
 (
@@ -67,6 +68,33 @@ INSERT INTO [Kategoria] values
 (
 	DEFAULT, 'Historyczna'
 );
+------------------------------------------------------
+ALTER TABLE [Wydawcy]
+	ADD
+	DEFAULT
+	NEXT VALUE dbo.LiczWydawcy
+	FOR IdWydawcy;
+
+INSERT INTO [Wydawcy]
+(
+	DEFAULT, 'Zielona Sowa'
+);
+
+INSERT INTO [Wydawcy]
+(
+	DEFAULT, 'PWN'
+);
+	
+INSERT INTO [Wydawcy]
+(
+	DEFAULT,'Super Ksiazka'
+);
+
+INSERT INTO [Wydawcy]
+(
+	DEFAULT, 'Pearson'
+);
+
 
 
 
