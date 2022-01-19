@@ -1,2 +1,2 @@
 # BIBLIOTEKA
-Pierwsza baza danych. Opracowana w MSSQL
+Pierwsza baza danych. Opracowana w MSSQL. Wstrzymana
